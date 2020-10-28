@@ -6,7 +6,7 @@ pipeline {
         sh '''cd AngularDemoApp
 npm install
 ng build --prod
-copy dist/ ~/ansible-demo/buildoutput'''
+cp dist/ ~/ansible-demo/buildoutput'''
       }
     }
 
