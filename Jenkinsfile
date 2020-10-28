@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '''cd AngularDemoApp
-ng build --prod'''
+        sh '''npm install
+cd AngularDemoApp
+ng build'''
       }
     }
 
