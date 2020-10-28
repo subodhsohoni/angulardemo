@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''cd AngularDemoApp
 npm install
-ng build --production'''
+ng build --prod'''
       }
     }
 
