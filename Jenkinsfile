@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''cd AngularDemoApp
-ng build --prod --aot=true'''
+ng build --prod'''
       }
     }
 
