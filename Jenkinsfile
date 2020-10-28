@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''cd AngularDemoApp
-ng build --no-aot --no-build-optimizer --base-href ./'''
+npm run build'''
       }
     }
 
