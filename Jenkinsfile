@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '''npm install
-ng update
-npm update
+        sh '''ng update @angular/cli @angular/core
+npm install --save-dev @angular-devkit/build-angular
 cd AngularDemoApp
 ng build --no-aot --no-build-optimizer --base-href ./'''
       }
