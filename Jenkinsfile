@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'ng build --no-aot --no-build-optimizer --base-href ./'
+        sh '''cd angulardemo
+ng build --no-aot --no-build-optimizer --base-href ./'''
       }
     }
 
