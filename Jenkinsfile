@@ -6,7 +6,8 @@ pipeline {
         sh '''cd AngularDemoApp
 npm install
 ng build --prod
-cp -a dist/. ~/ansible-demo/buildoutput'''
+mkdir /var/lib/jenkins/buildoutput/$BUILD_NUMBER
+cp -a dist/. /var/lib/jenkins/buildoutput/$BUILD_NUMBER'''
       }
     }
 
